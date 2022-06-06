@@ -58,6 +58,30 @@ Section:NewButton("Buy Baby Mermaid", "Buy Baby Mermaid", function()
 
 end)
 
+Section:NewButton("Buy XOX", "Buy XOX", function()
+
+    local args = {
+
+        [1] = "XOX"
+
+    }
+
+    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Buy Lenay", "Buy Lenay", function()
+
+    local args = {
+
+        [1] = "Lenay"
+
+    }
+
+    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+
+end)
+
 local Section = Tab:NewSection("Crash Server Spam click or Download Auto clicker")
 
 Section:NewButton("Crash server", "Crash server", function()
